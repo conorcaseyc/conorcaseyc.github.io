@@ -166,6 +166,7 @@
             var lat = position.coords.latitude; 
             var long = position.coords.longitude;
             var url = 'https://darksky.net/widget/graph-bar/'+lat+','+long+'/si12/en.js?width=100%&height=400&title=Full Forecast&textColor=333333&bgColor=FFFFFF&transparency=false&skyColor=undefined&fontFamily=Times New Roman&customFont=&units=si&timeColor=333333&tempColor=333333&currentDetailsOption=true';
+            console.log(url)
           }
         </script>
         <center><button id="weather_button" class="button" onclick="getLocation()" >Get Weather Information</button></center>

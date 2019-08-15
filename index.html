@@ -152,6 +152,10 @@
           </script>
         
         <h1 id='Weather'>Weather</h1>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/51d88n9d58/kenmare/" data-label_1="KENMARE" data-label_2="WEATHER" data-theme="original" >KENMARE WEATHER</a>
+        <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
         <script id="weather_output"></script>
         <script>
           function getLocation() {
@@ -166,11 +170,11 @@
             var lat = position.coords.latitude; 
             var long = position.coords.longitude;
             var url = 'https://darksky.net/widget/graph-bar/'+lat+','+long+'/si12/en.js?width=100%&height=400&title=Full Forecast&textColor=333333&bgColor=FFFFFF&transparency=false&skyColor=undefined&fontFamily=Times New Roman&customFont=&units=si&timeColor=333333&tempColor=333333&currentDetailsOption=true';
-            console.log(url)
           }
         </script>
         <center><button id="weather_button" class="button" onclick="getLocation()" >Get Weather Information</button></center>
         
+
         <br>
         <h1 id='Twitter'>Twitter</h1>
         <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="114736/"></script>

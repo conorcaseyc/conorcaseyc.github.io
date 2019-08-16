@@ -21,7 +21,7 @@
    left: 0;
    position: absolute;
    top: 0;
-   width: 110%;
+   width: 100%;
 }
 
 .highlight table pre { margin: 0; }

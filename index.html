@@ -152,7 +152,9 @@
           </script>
         
         <h1 id='Weather'>Weather</h1>
-        <center><iframe id="weather_output" src="https://darksky.net/forecast/0,0/si12/en" style="border:0px #ffffff none;" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="800px" allowfullscreen></iframe></center>
+        <div class="iframe-container">
+          <center><iframe id="weather_output" src="https://darksky.net/forecast/0,0/si12/en" allowfullscreen></iframe></center>
+        </div>
         <script>
           function getLocation() {
             if (navigator.geolocation) {

@@ -153,7 +153,7 @@
         
         <h1 id='Weather'>Weather</h1>
         <div class="iframe-container">
-          <center><iframe id="weather_output" src="https://darksky.net/forecast/0,0/si12/en" height="1000px" allowfullscreen></iframe></center>
+          <center><iframe id="weather_output" src="https://darksky.net/forecast/0,0/si12/en" allowfullscreen></iframe></center>
         </div>
         <script>
           function getLocation() {
@@ -171,7 +171,7 @@
             document.getElementById('weather_output').src = url;
           }
         </script>
-        <center><button id="weather_button" class="button" onclick="getLocation()" >Get Weather Information</button></center>
+        <center><button id="weather_button" class="button" onclick="getLocation()" >Get Local Weather Information</button></center>
         
         
         <br>

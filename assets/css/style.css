@@ -22,8 +22,8 @@
   border: 2px solid black;
 }
 
-* {
-  margin-bottom: 75px;
+h1 {
+  margin-bottom: 50px;
 }
 
 .highlight table pre { margin: 0; }

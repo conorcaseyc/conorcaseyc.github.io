@@ -141,9 +141,9 @@
           function populationdensity() {
           var pd=prompt("Please enter the population density of the area you are currently in:");
           pd = pd.replace(/\s+/g, '');
-          if (!(isNaN(parseInt(pd)))) {
-            var sqm= -2.51632097e-03 * pd + 2.07271443e+01;
-            sqm=sqm.toFixed(2);
+          var sqm= -2.51632097e-03 * pd + 2.07271443e+01;
+          sqm=sqm.toFixed(2);
+          if (!(isNaN(parseFloat(pd)))) {
             var stargazing=calculate(sqm);
             function calculate(x) {
               if (x < 17) {
@@ -161,7 +161,12 @@
               }
             }
             var result;
+            if (sqm > 0) {
             result="Photopollution in this area is, approximately, <b>"+sqm+" mags / arcsec^2</b>. This should correlate to <b>"+stargazing+" Stargazing Conditions</b>.";
+            }
+            else {
+              result="That's weird, it appears the calculator outputted a negative value. We apologise for any inconvenience caused."
+            }
           } else {
             var result;
             result="It appears you have not entered a positive number into the text field prompt provided. Please try again."

@@ -104,7 +104,8 @@
               );
             }
             var found = getTownName(townName);
-            if (typeof found === 'undefined') {
+            console.log(found.length);
+            if (!(found.length === 0)) {
               var pd = found[0].PD;
               var sqm = -2.51632097e-03 * pd + 2.07271443e+01;
               sqm = sqm.toFixed(2)

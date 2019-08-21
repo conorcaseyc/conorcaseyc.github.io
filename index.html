@@ -162,10 +162,11 @@
               }
             }
             var result;
-            if (sqm > 0) {
-            result="Photopollution in this area is, approximately, <b>"+sqm+" mags / arcsec^2</b>. This should correlate to <b>"+stargazing+" Stargazing Conditions</b>.";
-            }
-            else {
+            if (isNaN(parseFloat(sqm))) {
+              result="It appears you have not entered a positive number into the text field prompt provided. Please try again.";
+            } else if (!(sqm <= 0)) {
+              result="Photopollution in this area is, approximately, <b>"+sqm+" mags / arcsec^2</b>. This should correlate to <b>"+stargazing+" Stargazing Conditions</b>.";
+            } else {
               result="That's weird, it appears the calculator outputted a negative value. We apologise for any inconvenience caused."
             }
           } else {

@@ -144,7 +144,7 @@
           pd = pd.replace(/\s+/g, '');
           var sqm= -2.51632097e-03 * pd + 2.07271443e+01;
           sqm=sqm.toFixed(2);
-          if (!(isNaN(parseFloat(pd)))) {
+          if (!(isNaN(parseFloat(pd))) && pd >= 0) {
             var stargazing=calculate(sqm);
             function calculate(x) {
               if (x < 17) {
